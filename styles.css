@@ -35,14 +35,15 @@ header > a {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    margin-top: 18px;
-    margin-left: 18px;
+    margin-top: 17px;
+    margin-left: 20px;
     position: absolute;
+    /*left: 20px;*/
 }
 
-.user_photo h3 {
+.user_photo h2 {
     color: #FF7F66;
-    font-size: 18pt;
+    /*font-size: 18pt;*/
     margin-top: 17px;
     margin-left: 80px;
 }
@@ -75,21 +76,29 @@ header > a {
     color: #F6DFC0;
     height: 100px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .members {
     position: absolute;
-    margin-left: 18px;
-    font-size: 14pt;
+    /*margin-left: 20px;*/
+    font-size: 16pt;
     top: 40px;
+    left: 10px;
+}
+
+.members i {
+    margin-left: 20px;
 }
 
 .accept button {
     background-color: #FF7F66;
-    position: absolute;
-    top: 25px;
-    left: 50%;
-    margin-left: -100px;
+    /*position: absolute;*/
+    /*top: 25px;*/
+    /*left: 50%;*/
+    /*margin-left: -100px;*/
     border-radius: 5px;
     border: none;
     color: white;
@@ -105,13 +114,12 @@ i {
     background-color: #2B3745;
     height: 600px;
     color: #F6DFC0;
-    font-size: 14pt;
+    font-size: 16pt;
     position: relative;
 }
 
 h2 {
     margin: 0;
-    margin-top: ;
 }
 
 .log_in {
@@ -120,9 +128,21 @@ h2 {
 
 .odd {
     height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.odd i {
+    margin-left: 30px;
 }
 
 .even {
     background-color: #303D4D;
     height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.even i {
+    margin-left: 30px;
 }
