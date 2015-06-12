@@ -3,26 +3,67 @@ body {
     color: white;
 }
 
+/*******************************
+Header
+*******************************/
+
 header {
     color: #303D4D;
+    position: relative;
     text-align: center;
     top: 20px;
     height: 100px;
-    position: relative;
 }
 
 header > a {
     position: absolute;
+    color: #303D4D;
     top: 2px;
     left: 30px;
-    display: inline;
-    color: #303D4D;
 }
+
+.header_buttons {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+}
+
+header button {
+    background-color: #FF7F66;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12pt;
+    width: 80px;
+}
+
+/*******************************
+Hero
+*******************************/
 
 .hero {
     background-color: #303D4D;
     height: 400px;
+    display: flex;
+    justify-content: center;
 }
+
+.large_photo_border {
+    border: 4px solid #FF7F66;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.user_info {
+    justify-content: center;
+}
+
+/*******************************
+Primary Content
+*******************************/
 
 .user {
     background-color: #F6DFC0;
@@ -30,7 +71,7 @@ header > a {
     position: relative;
 }
 
-.user_photo {
+.small_photo_border {
     border: 4px solid #FF7F66;
     width: 60px;
     height: 60px;
@@ -38,26 +79,12 @@ header > a {
     margin-top: 17px;
     margin-left: 20px;
     position: absolute;
-    /*left: 20px;*/
 }
 
-.user_photo h2 {
+.user h2 {
     color: #FF7F66;
-    /*font-size: 18pt;*/
     margin-top: 17px;
     margin-left: 80px;
-}
-
-.user_log_in {
-    border: 4px solid #FF7F66;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    /*margin-top: 18px;*/
-    margin-left: -100px;
-    position: absolute;
-    top: 150px;
-    left: 50%;
 }
 
 .first_title {
@@ -83,7 +110,6 @@ header > a {
 
 .members {
     position: absolute;
-    /*margin-left: 20px;*/
     font-size: 16pt;
     top: 40px;
     left: 10px;
@@ -95,10 +121,6 @@ header > a {
 
 .accept button {
     background-color: #FF7F66;
-    /*position: absolute;*/
-    /*top: 25px;*/
-    /*left: 50%;*/
-    /*margin-left: -100px;*/
     border-radius: 5px;
     border: none;
     color: white;
@@ -118,12 +140,23 @@ i {
     position: relative;
 }
 
-h2 {
-    margin: 0;
+.bars i {
+    margin-left: 30px;
 }
 
 .log_in {
     text-align: center;
+}
+
+.bars.log_in button {
+    background-color: #FF7F66;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    font-size: 12pt;
+    width: 234px;
+
 }
 
 .odd {
@@ -132,17 +165,9 @@ h2 {
     align-items: center;
 }
 
-.odd i {
-    margin-left: 30px;
-}
-
 .even {
     background-color: #303D4D;
     height: 100px;
     display: flex;
     align-items: center;
-}
-
-.even i {
-    margin-left: 30px;
 }
