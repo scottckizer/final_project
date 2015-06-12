@@ -61,6 +61,14 @@ Hero
     justify-content: center;
 }
 
+.user_info h1 {
+    text-align: center;
+}
+
+.user_info h3 {
+    text-align: center;
+}
+
 /*******************************
 Primary Content
 *******************************/
@@ -146,6 +154,23 @@ i {
 
 .log_in {
     text-align: center;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    margin: 10px;
+}
+
+h6 {
+    margin: 10px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #F6DFC0;
+}
+
+input {
+    color: #303D4D;
 }
 
 .bars.log_in button {
@@ -156,7 +181,7 @@ i {
     padding: 7px 10px;
     font-size: 12pt;
     width: 234px;
-
+    margin: 15px 0px;
 }
 
 .odd {
