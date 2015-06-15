@@ -5,13 +5,16 @@ create table user (
     email varchar(255),
     password char(64),
     user_photo varchar(2080),
-    datetime_created datetime
+    remember_token varchar(255),
+    created_at datetime,
+    updated_at datetime
 );
 
 create table trail (
     id int auto_increment primary key,
     trail_name varchar(150),
-    datetime_created datetime
+    created_at datetime,
+    updated_at datetime
 );
 
 create table race (
@@ -21,15 +24,18 @@ create table race (
     race_name varchar(150),
     open_date datetime,
     close_date datetime,
-    datetime_created datetime
+    created_at datetime,
+    updated_at datetime
 );
 
 create table trail_points (
     id int auto_increment primary key,
     trail_id int,
-    latitude,
-    longitude,
-    time
+    latitude float,
+    longitude float,
+    time time,
+    created_at datetime,
+    updated_at datetime
 );
 
 create table photos (
@@ -37,14 +43,17 @@ create table photos (
     user_id int,
     trail_id int,
     race_id int,
-    photo varchar(2080)
+    created_at datetime,
+    updated_at datetime
 );
 
 create table race_points (
     id int auto_increment primary key,
     user_id int,
     race_id int,
-    latitude,
-    longitude,
-    time
+    latitude float,
+    longitude float,
+    time time,
+    created_at datetime,
+    updated_at datetime
 );
