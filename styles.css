@@ -102,7 +102,7 @@ Primary Content
     margin: 0;
 }
 
-.map {
+#map {
     background-color: #342D27;
     height: 350px;
 }
@@ -180,6 +180,11 @@ input {
     color: #303D4D;
     height: 30px;
     width: 234px;
+}
+
+.bars a {
+    text-decoration: none;
+    color: #F6DFC0;
 }
 
 .bars.log_in {
