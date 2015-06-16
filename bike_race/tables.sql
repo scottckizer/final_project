@@ -1,3 +1,7 @@
+CREATE DATABASE bike_race;
+
+USE bike_race;
+
 create table user (
     id int auto_increment primary key,
     first_name varchar(20),
