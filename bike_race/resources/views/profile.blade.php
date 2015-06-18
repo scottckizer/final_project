@@ -8,17 +8,17 @@
         <h3><i class="fa fa-trophy"></i>Races Won: 12</h3>
     </div>
 </div>
-<div class="bars">
-    <a href="">
+<div class="primary_section">
+    <a href="index">
         <div class="odd">
             <i class="fa fa-bicycle"></i>
             <span>New Race</span>
         </div>
     </a>
-    <a href="">
+    <a href="races">
         <div class="even">
             <i class="fa fa-flag-checkered"></i>
-            <span>My Challenges</span>
+            <span>My Races</span>
         </div>
     </a>
     <a href="">

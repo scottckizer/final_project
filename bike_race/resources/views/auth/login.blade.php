@@ -20,7 +20,7 @@
     </div>
 </div>
 
-<form class="bars log_in" role="form" method="POST" action="{{ url('/auth/login') }}">
+<form class="primary_section log_in" role="form" method="POST" action="{{ url('/auth/login') }}">
 	<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 	<section>
@@ -52,6 +52,9 @@
 		<button type="submit">
 			Log In
 		</button>
+
+        <h6>Forgot your E-mail or Password?</h6>
+
 
 		{{-- <div class="form-group">
 			<div class="col-md-6 col-md-offset-4">

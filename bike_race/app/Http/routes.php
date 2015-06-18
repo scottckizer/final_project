@@ -15,6 +15,10 @@ Route::get('/', 'WelcomeController@index');
 Route::get('home', 'WelcomeController@index');
 Route::get('index', 'WelcomeController@index');
 
+Route::get('races', function() {
+    return view('races');
+});
+
 /****************************************
     User
 ****************************************/

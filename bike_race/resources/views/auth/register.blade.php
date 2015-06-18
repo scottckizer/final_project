@@ -20,7 +20,7 @@
     </div>
 </div>
 
-<form class="bars register" role="form" method="POST" action="{{ url('/auth/register') }}">
+<form class="primary_section register" role="form" method="POST" action="{{ url('/auth/register') }}">
 	<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 	<section>
@@ -104,6 +104,15 @@
 		<button type="submit">
 			Sign Up
 		</button>
+
+        <h6>Already have an account?</h6>
+
+		{{-- <a href="/auth/login.blade.php">
+        	<button>
+        		Log In
+        	</button>
+		</a> --}}
+
 	</section>
 
 </form>

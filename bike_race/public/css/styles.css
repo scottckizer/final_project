@@ -141,7 +141,7 @@ i {
     margin-right: 10px;
 }
 
-.bars {
+.primary_section {
     background-color: #2B3745;
     height: 600px;
     color: #F6DFC0;
@@ -149,7 +149,7 @@ i {
     position: relative;
 }
 
-.bars i {
+.primary_section i {
     margin-left: 30px;
 }
 
@@ -178,9 +178,9 @@ h4 {
 }
 
 h6 {
-    margin: 10px;
+    margin: 25px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #F6DFC0;
+    /*border-bottom: 1px solid #F6DFC0;*/
 }
 
 input {
@@ -189,16 +189,16 @@ input {
     width: 234px;
 }
 
-.bars a {
+.primary_section a {
     text-decoration: none;
     color: #F6DFC0;
 }
 
-.bars.register, .bars.log_in {
+.primary_section.register, .primary_section.log_in {
     height: 900px;
 }
 
-.bars.register button, .bars.log_in button {
+.primary_section.register button, .primary_section.log_in button {
     background-color: #FF7F66;
     border-radius: 5px;
     border: none;
@@ -206,7 +206,7 @@ input {
     padding: 7px 10px;
     font-size: 12pt;
     width: 242px;
-    margin: 40px 0px;
+    margin: 40px 0px 0px;
 }
 
 .input_photo {
