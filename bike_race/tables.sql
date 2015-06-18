@@ -37,7 +37,7 @@ create table trail_points (
     trail_id int,
     latitude float,
     longitude float,
-    time time,
+    point_time time,
     created_at datetime,
     updated_at datetime
 );
@@ -57,7 +57,7 @@ create table race_points (
     race_id int,
     latitude float,
     longitude float,
-    time time,
+    point_time time,
     created_at datetime,
     updated_at datetime
 );
