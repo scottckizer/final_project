@@ -11,7 +11,7 @@
         Trail Name
     </div>
     <div id="map">
-        Google Map
+        {{-- Google Map --}}
     </div>
     <div class="accept">
         <div class="members">
@@ -34,7 +34,7 @@
         Trail Name
     </div>
     <div id="map">
-        Google Map
+        {{-- Google Map --}}
     </div>
     <div class="accept">
         <div class="members">
