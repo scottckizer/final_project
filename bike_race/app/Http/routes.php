@@ -12,8 +12,23 @@
 */
 
 Route::get('/', 'WelcomeController@index');
+Route::get('home', 'WelcomeController@index');
+Route::get('index', 'WelcomeController@index');
 
-Route::get('home', 'HomeController@index');
+/****************************************
+    User
+****************************************/
+Route::get('users', 'UserController@viewAll');
+Route::get('users/create', 'UserController@create');
+Route::post('users/create', 'UserController@postCreate');
+Route::get('users/{id}', 'UserController@view');
+Route::get('users/{id}/update', 'UserController@update');
+Route::post('users/{id}/update', 'UserController@postUpdate');
+Route::delete('users/{id}/delete', 'UserController@delete');
+Route::get('users/{id}/comments', 'UserController@usercomments');
+Route::get('logout', 'UserController@logout');
+
+// Route::get('profile', '')
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
@@ -24,6 +39,4 @@ Route::get('profile', function() {
     return view('profile');
 });
 
-Route::get('index', function() {
-    return view('index');
-});
+
