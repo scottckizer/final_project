@@ -5,6 +5,7 @@
 <div class="container">
     <div class="user">
         <div class="small_photo_border">
+            {{-- <img src="/images/scott_small.jpg">    --}}
             <h2>Username</h2>
         </div>
     </div>

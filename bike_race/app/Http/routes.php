@@ -32,6 +32,19 @@ Route::delete('users/{id}/delete', 'UserController@delete');
 Route::get('users/{id}/comments', 'UserController@usercomments');
 Route::get('logout', 'UserController@logout');
 
+/****************************************
+    Races
+****************************************/
+Route::get('races', 'RaceController@viewAll');
+Route::get('races/create', 'RaceController@create');
+Route::post('races/create', 'RaceController@postCreate');
+Route::get('races/{id}', 'RaceController@view');
+Route::get('races/{id}/update', 'RaceController@update');
+Route::post('races/{id}/update', 'RaceController@postUpdate');
+Route::delete('races/{id}/delete', 'RaceController@delete');
+Route::get('races/{id}/comments', 'RaceController@raceComments');
+Route::get('logout', 'RaceController@logout');
+
 // Route::get('profile', '')
 
 Route::controllers([

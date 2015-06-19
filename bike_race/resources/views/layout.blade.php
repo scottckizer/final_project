@@ -81,7 +81,7 @@
 </head>
 <body>
     <header>
-        <h1>Final Project</h1>
+        <h1>Bike Racer</h1>
         <a href="/views/index">
             <i class="fa fa-bars fa-2x"></i>
         </a>

@@ -87,6 +87,7 @@ Primary Content
     border-radius: 50%;
     margin-top: 17px;
     margin-left: 20px;
+    /*overflow: hidden;*/
     position: absolute;
 }
 

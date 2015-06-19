@@ -3,7 +3,9 @@
 @section('main')
 <div class="hero">
     <div class="user_info">
-        <div class="large_photo_border"></div>
+        <div class="large_photo_border">
+            <img src="/images/scott.jpg">
+        </div>
         <h1>Scott Kizer</h1>
         <h3><i class="fa fa-trophy"></i>Races Won: 12</h3>
     </div>
