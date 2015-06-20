@@ -9,10 +9,16 @@ class RaceController extends Controller {
         $this->middleware('auth');
     }
 
+    public function newRace() {
+        // $races = Race::all();
+        return view('new_race');
+            // ['races' => $races]);
+    }
+
     public function viewAll() {
-        $races = Race::all();
-        return view('all_races',
-            ['races' => $races]);
+        // $races = Race::all();
+        return view('races');
+            // ['races' => $races]);
     }
 
     public function viewRace($race_id) {

@@ -15,9 +15,9 @@ Route::get('/', 'WelcomeController@index');
 Route::get('home', 'WelcomeController@index');
 Route::get('index', 'WelcomeController@index');
 
-Route::get('races', function() {
-    return view('races');
-});
+// Route::get('races', function() {
+//     return view('races');
+// });
 
 /****************************************
     User
@@ -29,21 +29,20 @@ Route::get('users/{id}', 'UserController@view');
 Route::get('users/{id}/update', 'UserController@update');
 Route::post('users/{id}/update', 'UserController@postUpdate');
 Route::delete('users/{id}/delete', 'UserController@delete');
-Route::get('users/{id}/comments', 'UserController@usercomments');
-Route::get('logout', 'UserController@logout');
+Route::get('users/{id}/comments', 'UserController@userComments');
 
 /****************************************
     Races
 ****************************************/
 Route::get('races', 'RaceController@viewAll');
+Route::get('new_race', 'RaceController@newRace');
 Route::get('races/create', 'RaceController@create');
 Route::post('races/create', 'RaceController@postCreate');
-Route::get('races/{id}', 'RaceController@view');
+Route::get('races/{id}', 'RaceController@viewRace');
 Route::get('races/{id}/update', 'RaceController@update');
 Route::post('races/{id}/update', 'RaceController@postUpdate');
 Route::delete('races/{id}/delete', 'RaceController@delete');
-Route::get('races/{id}/comments', 'RaceController@raceComments');
-Route::get('logout', 'RaceController@logout');
+Route::get('races/{id}/comments', 'RaceController@viewAllRaceComments');
 
 // Route::get('profile', '')
 

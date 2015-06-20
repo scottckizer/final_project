@@ -11,7 +11,7 @@
     </div>
 </div>
 <div class="primary_section">
-    <a href="index">
+    <a href="new_race">
         <div class="odd">
             <i class="fa fa-bicycle"></i>
             <span>New Race</span>
