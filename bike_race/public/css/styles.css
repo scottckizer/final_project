@@ -45,7 +45,7 @@ Hero
 
 .hero {
     background-color: #303D4D;
-    height: 350px;
+    height: 400px;
     display: flex;
     justify-content: center;
 }
@@ -108,32 +108,25 @@ Primary Content
     position: relative;
 }
 
-.input_one {
+.input_dropdown {
     position: absolute;
     left: 25px;
 }
 
+.input_one {
+    position: absolute;
+    left: 275px;
+}
+
 .input_two {
     position: absolute;
-    left: 375px;
+    left: 650px;
     /*right: 300px;*/
 }
 
 .input_three {
     position: absolute;
-    left: 725px;
-}
-
-.first_title button {
-    background-color: #FF7F66;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    padding: 15px 50px;
-    font-size: 14pt;
-    position: absolute;
     right: 25px;
-    margin-top: 25px;
 }
 
 #map {

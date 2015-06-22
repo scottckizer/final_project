@@ -1,6 +1,9 @@
 <?php namespace App\Http\Controllers;
 
+use Auth;
 use Request;
+use App\User;
+use App\Models;
 use App\Models\Race;
 
 class RaceController extends Controller {
@@ -39,12 +42,14 @@ class RaceController extends Controller {
 
     public function postCreate() {
         $race = new Race();
+        $race->user_id = Auth::user()->id;
+        $race->trail_id = Request::input('trail_id');
         $race->race_name = Request::input('race_name');
         $race->open_date = Request::input('open_date');
         $race->close_date = Request::input('close_date');
         $race->save();
 
-        return redirect('race');
+        return redirect('new_race');
     }
 
     public function update($race_id) {
