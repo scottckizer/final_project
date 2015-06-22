@@ -11,7 +11,7 @@ header {
     color: #F6DFC0;
     position: relative;
     text-align: center;
-    top: 20px;
+    /*top: 20px;*/
     height: 100px;
     font-family: 'Rock Salt';
 }
@@ -19,7 +19,7 @@ header {
 header > a {
     position: absolute;
     color: #F6DFC0;
-    top: 2px;
+    top: 20px;
     left: 30px;
 }
 
@@ -45,7 +45,7 @@ Hero
 
 .hero {
     background-color: #303D4D;
-    height: 400px;
+    height: 350px;
     display: flex;
     justify-content: center;
 }
@@ -102,9 +102,38 @@ Primary Content
     background-color: #E2CDB0;
     height: 100px;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    position: relative;
+}
+
+.input_one {
+    position: absolute;
+    left: 25px;
+}
+
+.input_two {
+    position: absolute;
+    left: 375px;
+    /*right: 300px;*/
+}
+
+.input_three {
+    position: absolute;
+    left: 725px;
+}
+
+.first_title button {
+    background-color: #FF7F66;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    font-size: 14pt;
+    position: absolute;
+    right: 25px;
+    margin-top: 25px;
 }
 
 #map {

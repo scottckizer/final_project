@@ -36,6 +36,7 @@ Route::get('users/{id}/comments', 'UserController@userComments');
 ****************************************/
 Route::get('races', 'RaceController@viewAll');
 Route::get('new_race', 'RaceController@newRace');
+Route::post('new_race', 'RaceController@postCreate');
 Route::get('races/create', 'RaceController@create');
 Route::post('races/create', 'RaceController@postCreate');
 Route::get('races/{id}', 'RaceController@viewRace');

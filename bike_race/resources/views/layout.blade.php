@@ -15,8 +15,8 @@
 
     var map;
     var origin = {
-        lat: 33.6653937,
-        lng: -112.2273696
+        lat: 33.5107383,
+        lng: -111.9087771
     }
 
     $(function() {

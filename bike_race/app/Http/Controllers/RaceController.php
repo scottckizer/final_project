@@ -39,9 +39,9 @@ class RaceController extends Controller {
 
     public function postCreate() {
         $race = new Race();
-        $race->user_id = Request::input('user_id');
-        $race->race_title = Request::input('race_title');
-        $race->race_url = Request::input('race_url');
+        $race->race_name = Request::input('race_name');
+        $race->open_date = Request::input('open_date');
+        $race->close_date = Request::input('close_date');
         $race->save();
 
         return redirect('race');

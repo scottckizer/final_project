@@ -6,11 +6,11 @@
     <div class="user">
         <div class="small_photo_border">
             {{-- <img src="/images/scott_small.jpg">    --}}
-            <h2>Username</h2>
+            <h2>Scott</h2>
         </div>
     </div>
     <div class="first_title">
-        Trail Name
+        Scottsdale Bike Path
     </div>
     <div id="map">
         {{-- Google Map --}}
