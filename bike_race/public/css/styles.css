@@ -1,5 +1,5 @@
 body {
-    background-color: #F6DFC0;
+    background-color: #303D4D;
     color: white;
 }
 
@@ -8,16 +8,17 @@ Header
 *******************************/
 
 header {
-    color: #303D4D;
+    color: #F6DFC0;
     position: relative;
     text-align: center;
     top: 20px;
     height: 100px;
+    font-family: 'Rock Salt';
 }
 
 header > a {
     position: absolute;
-    color: #303D4D;
+    color: #F6DFC0;
     top: 2px;
     left: 30px;
 }
@@ -101,6 +102,9 @@ Primary Content
     background-color: #E2CDB0;
     height: 100px;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #map {

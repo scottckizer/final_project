@@ -10,7 +10,26 @@
         </div>
     </div>
     <div class="first_title">
-        Trail Name
+        <form class="user_input" role="form" method="POST" action="{{ url('/auth/register') }}">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                <div>
+                    <h4>Race Name</h4>
+                    <input type="text" name="race_name" placeholder="Race Name">
+                </div>
+
+                <div>
+                    <h4>Date Created:</h4>
+                    <input type="text" name="open_date" placeholder="Date Created">
+                </div>
+
+                <div>
+                    <h4>Finish By:</h4>
+                    <input type="text" name="close_date" placeholder="Finish By">
+                </div>
+
+                <button type="Submit">Submit</button>
+        </form>
     </div>
     <div id="map">
         {{-- Google Map --}}

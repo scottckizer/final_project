@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
     <script src="main.js"></script>
     <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
