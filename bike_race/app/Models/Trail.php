@@ -7,17 +7,17 @@ use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
-class Race extends Model implements AuthenticatableContract, CanResetPasswordContract {
+class Trail extends Model implements AuthenticatableContract, CanResetPasswordContract {
     use Authenticatable, CanResetPassword;
 
-    protected $table = 'race';
+    protected $table = 'trail';
     protected $primaryKey = 'id';
-    protected $fillable = ['race_name', 'open_date', 'close_date'];
+    protected $fillable = ['trail_name'];
     
 
     public function comments() {
 
-        return $this->hasMany('App\Models\RaceComment');
+        return $this->hasMany('App\Models\TrailComment');
 
     }
 
@@ -27,7 +27,7 @@ class Race extends Model implements AuthenticatableContract, CanResetPasswordCon
 
     }
 
-    public function races() {
+    public function trails() {
 
         return $this->belongsTo('App\Models\RaceComment');
 

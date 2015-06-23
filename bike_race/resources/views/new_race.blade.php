@@ -22,6 +22,7 @@
                         <option value="New River Trail">New River Trail</option>
                         <option value="Scottsdale Bike Path">Scottsdale Bike Path</option>
                         <option value="Skunk Creek Trail">Skunk Creek Trail</option>
+                        <option value="WestWing Parkway">WestWing Parkway</option>
                     </select>
                 </div>
 
@@ -39,6 +40,11 @@
                     <h4>Finish By:</h4>
                     <input type="date" name="close_date">
                 </div>
+
+                <button type="submit">
+                    <i class="fa fa-bicycle"></i>
+                    <span>Create Trail</span>
+                </button>
 
         </form>
     </div>

@@ -83,7 +83,7 @@
 <body>
     <header>
         <h1>Bike Racer</h1>
-        <a href="/views/index">
+        <a href="/auth/register">
             <i class="fa fa-bars fa-2x"></i>
         </a>
     </header>

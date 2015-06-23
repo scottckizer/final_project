@@ -24,8 +24,8 @@ class RaceController extends Controller {
             // ['races' => $races]);
     }
 
-    public function viewRace($race_id) {
-        $race = Race::find($race_id);
+    public function viewRace($id) {
+        $race = Race::find($id);
         return view('race',
             ['race' => $race]);
     }
@@ -52,25 +52,27 @@ class RaceController extends Controller {
         return redirect('new_race');
     }
 
-    public function update($race_id) {
-        $race = Race::find($race_id);
+    public function update($id) {
+        $race = Race::find($id);
         return view('update_race',
             ['race' => $race]);
     }
 
-    public function postUpdate($race_id) {
-        $race = Race::find($race_id);
+    public function postUpdate($id) {
+        $race = Race::find($id);
         $race->user_id = Request::input('user_id');
-        $race->race_title = Request::input('race_title');
-        $race->race_url = Request::input('race_url');
+        $race->trail_id = Request::input('trail_id');
+        $race->race_name = Request::input('race_name');
+        $race->open_date = Request::input('open_date');
+        $race->close_date = Request::input('close_date');
         $race->save();
 
         return redirect('race');
     }
 
-    public function delete($race_id) {
-        $race = Race::find($race_id);
-        $race->delete($race_id);
+    public function delete($id) {
+        $race = Race::find($id);
+        $race->delete($id);
 
         return redirect('race');
     }
