@@ -15,7 +15,6 @@
 
 <div class="hero">
     <div class="large_photo_border">
-        <!-- <div class="large_photo"></div> -->
         <img src="/images/rider_cropped.jpg">
     </div>
 </div>

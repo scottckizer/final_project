@@ -88,7 +88,7 @@ Primary Content
     border-radius: 50%;
     margin-top: 17px;
     margin-left: 20px;
-    /*overflow: hidden;*/
+    overflow: hidden;
     position: absolute;
 }
 
@@ -178,6 +178,27 @@ i {
 
 .primary_section i {
     margin-left: 30px;
+}
+
+.races {
+    width: 100%;
+}
+
+th, td {
+    margin-right: 100px;
+}
+
+.races tr:nth-child(odd) {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.races tr:nth-child(even) {
+    background-color: #303D4D;
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
 
 .register, .log_in {

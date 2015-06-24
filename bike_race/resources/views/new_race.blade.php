@@ -5,7 +5,7 @@
 <div class="container">
     <div class="user">
         <div class="small_photo_border">
-            {{-- <img src="/images/scott_small.jpg">    --}}
+            <img src="/images/scott_small.jpg">   
             <h2>Scott</h2>
         </div>
     </div>
@@ -17,6 +17,9 @@
                     <h4>Trail Name:</h4>
                     <select name="trail_name">
                         <option value="Choose Trail">Choose Trail</option>
+                        <!-- @foreach($trails as $trail)
+                        <option value="new_race/{{ $trail->trail_name }}">{{ $trail->trail_name }}</option>
+                        @endforeach -->
                         <option value="Arizona Canal Trail">Arizona Canal Trail</option>
                         <option value="Lake Pleasant Parkway">Lake Pleasant Parkway</option>
                         <option value="New River Trail">New River Trail</option>

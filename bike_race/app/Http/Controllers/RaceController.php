@@ -19,9 +19,8 @@ class RaceController extends Controller {
     }
 
     public function viewAll() {
-        // $races = Race::all();
-        return view('races');
-            // ['races' => $races]);
+        $races = Race::all();
+        return view('races', ['races' => $races]);
     }
 
     public function viewRace($id) {
@@ -32,6 +31,7 @@ class RaceController extends Controller {
 
     public function viewAllByUser($user_id) {
         $races = Race::where('user_id', '=', $user_id)->get();
+        dd($races);
         return view('user',
             ['races' => $races]);
     }
@@ -67,14 +67,13 @@ class RaceController extends Controller {
         $race->close_date = Request::input('close_date');
         $race->save();
 
-        return redirect('race');
+        return redirect('races');
     }
 
     public function delete($id) {
-        $race = Race::find($id);
-        $race->delete($id);
+        Race::destroy($id);
 
-        return redirect('race');
+        return redirect('races');
     }
 
     public function viewAllRaceComments($id) {
