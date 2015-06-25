@@ -10,11 +10,11 @@
         </div>
     </div>
     <div class="first_title">
-        <table class="races">
+        <table class="race_data">
             <tr>
-                <th>Race Name: {{ $race->race_name }}</th>
-                <th>Date Created: {{ $race->open_date }}</th>
-                <th>Finish By: {{ $race->close_date }}</th>
+                <th class="data_field_1">Race Name: {{ $race->race_name }}</th>
+                <th class="data_field_2">Date Created: {{ $race->open_date }}</th>
+                <th class="data_field_3">Finish By: {{ $race->close_date }}</th>
                 {{-- <th>Distance</th> --}}
                 {{-- <th>Time</th> --}}
                 {{-- <th>Edit</th> --}}

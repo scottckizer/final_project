@@ -198,6 +198,25 @@ i {
     width: 100%;
 }
 
+.data_field_1 {
+    position: absolute;
+    transform: translateY(220%);
+    /*left: 30px;*/
+    /*margin-left: 30px;*/
+}
+
+.data_field_2 {
+    position: absolute;
+    left: 520px;
+    transform: translateY(220%);
+}
+
+.data_field_3 {
+    position: absolute;
+    right: 30px;
+    transform: translateY(220%);
+}
+
 th, td {
     margin-left: 30px;
 }
