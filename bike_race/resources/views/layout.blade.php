@@ -13,72 +13,69 @@
     <script src="/javascript/gmaps.js"></script>
     <script type="text/javascript">
 
-    var map;
-    var origin = {
-        lat: 33.5107383,
-        lng: -111.9087771
-    }
+    // var map;
+    // var origin = {
+    //     lat: 33.5107383,
+    //     lng: -111.9087771
+    // }
 
-    $(function() {
-        map = new GMaps({
-            div: '#map',
-            lat: origin.lat,
-            lng: origin.lng
-        });
+    // $(function() {
+    //     map = new GMaps({
+    //         div: '#map',
+    //         lat: origin.lat,
+    //         lng: origin.lng
+    //     });
 
-        $('input[name="address"]').change(function(e) {
-            console.log($(this).val());
+    //     $('input[name="address"]').change(function(e) {
+    //         console.log($(this).val());
             
-            var latlng;
+    //         var latlng;
 
-            GMaps.geocode({
-                address: $(this).val(),
-                callback: function(results, status) {
-                    if (status == 'OK') {
-                        latlng = results[0].geometry.location;
-                        map.setCenter(latlng.lat(), latlng.lng());
-                        map.addMarker({
-                            lat: latlng.lat(),
-                            lng: latlng.lng()
-                        });
+    //         GMaps.geocode({
+    //             address: $(this).val(),
+    //             callback: function(results, status) {
+    //                 if (status == 'OK') {
+    //                     latlng = results[0].geometry.location;
+    //                     map.setCenter(latlng.lat(), latlng.lng());
+    //                     map.addMarker({
+    //                         lat: latlng.lat(),
+    //                         lng: latlng.lng()
+    //                     });
 
-                        map.drawRoute({
-                            origin: [origin.lat, origin.lng],
-                            destination: [latlng.lat(), latlng.lng()],
-                            travelMode: 'biking',
-                            strokeColor: 'red',
-                            strokeOpacity: 0.5,
-                            strokeWeight: 6
-                        });
+    //                     map.drawRoute({
+    //                         origin: [origin.lat, origin.lng],
+    //                         destination: [latlng.lat(), latlng.lng()],
+    //                         travelMode: 'biking',
+    //                         strokeColor: 'red',
+    //                         strokeOpacity: 0.5,
+    //                         strokeWeight: 6
+    //                     });
 
-                        url = GMaps.staticMapURL({
-                            size: [610, 300],
-                            lat: -12.043333,
-                            lng: -77.028333,
-                            markers: [
-                                {lat: -12.043333, lng: -77.028333},
-                                {lat: -12.045333, lng: -77.034,
-                                    size: 'small'},
-                                {lat: -12.045633, lng: -77.022,
-                                    color: 'blue'}
-                            ]
-                        });
+    //                     url = GMaps.staticMapURL({
+    //                         size: [610, 300],
+    //                         lat: -12.043333,
+    //                         lng: -77.028333,
+    //                         markers: [
+    //                             {lat: -12.043333, lng: -77.028333},
+    //                             {lat: -12.045333, lng: -77.034,
+    //                                 size: 'small'},
+    //                             {lat: -12.045633, lng: -77.022,
+    //                                 color: 'blue'}
+    //                         ]
+    //                     });
 
-                        $('<img/>').attr('src', url)
-                            .appendTo('#map');
+    //                     $('<img/>').attr('src', url)
+    //                         .appendTo('#map');
 
-                    }
-                }
-            });
+    //                 }
+    //             }
+    //         });
 
+    //     });
 
+    // });
 
-        });
-
-
-    });
-
-    </script>
+    // </script>
 </head>
 <body>
     <header>

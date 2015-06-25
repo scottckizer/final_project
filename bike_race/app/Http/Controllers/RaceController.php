@@ -25,13 +25,12 @@ class RaceController extends Controller {
     }
 
     public function viewRace($id) {
-        $race = Race::find($id);
+        $race = Race::with('race_points')->where('id', $id)->get();
         return view('race', ['race' => $race]);
     }
 
     public function viewAllByUser($user_id) {
         $races = Race::where('user_id', '=', $user_id)->get();
-        dd($races);
         return view('user', ['races' => $races]);
     }
 
