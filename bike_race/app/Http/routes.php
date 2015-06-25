@@ -34,6 +34,7 @@ Route::get('users/{id}/comments', 'UserController@userComments');
 /****************************************
     Races
 ****************************************/
+Route::get('race/{id}', 'RaceController@viewRace');
 Route::get('races', 'RaceController@viewAll');
 Route::get('new_race', 'RaceController@newRace');
 Route::post('new_race', 'RaceController@postCreate');
@@ -42,8 +43,9 @@ Route::post('races/create', 'RaceController@postCreate');
 Route::get('races/{id}', 'RaceController@viewRace');
 Route::get('races/{id}/update', 'RaceController@update');
 Route::post('races/{id}/update', 'RaceController@postUpdate');
-Route::delete('races/{id}/delete', 'RaceController@delete');
+Route::get('races/{id}/delete', 'RaceController@delete');
 Route::get('races/{id}/comments', 'RaceController@viewAllRaceComments');
+
 
 // Route::get('profile', '')
 

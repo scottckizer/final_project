@@ -5,6 +5,7 @@ use Request;
 use App\User;
 use App\Models;
 use App\Models\Race;
+use Carbon\Carbon;
 
 class RaceController extends Controller {
 
@@ -25,15 +26,13 @@ class RaceController extends Controller {
 
     public function viewRace($id) {
         $race = Race::find($id);
-        return view('race',
-            ['race' => $race]);
+        return view('race', ['race' => $race]);
     }
 
     public function viewAllByUser($user_id) {
         $races = Race::where('user_id', '=', $user_id)->get();
         dd($races);
-        return view('user',
-            ['races' => $races]);
+        return view('user', ['races' => $races]);
     }
 
     public function create() {
@@ -47,9 +46,9 @@ class RaceController extends Controller {
         $race->race_name = Request::input('race_name');
         $race->open_date = Request::input('open_date');
         $race->close_date = Request::input('close_date');
-        $race->save();
+        $race->save();        
 
-        return redirect('new_race');
+        return redirect('race/' . $race->id);
     }
 
     public function update($id) {
@@ -71,7 +70,7 @@ class RaceController extends Controller {
     }
 
     public function delete($id) {
-        Race::destroy($id);
+        $race = Race::destroy($id);
 
         return redirect('races');
     }

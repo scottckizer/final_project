@@ -17,9 +17,9 @@
                     <h4>Trail Name:</h4>
                     <select name="trail_name">
                         <option value="Choose Trail">Choose Trail</option>
-                        <!-- @foreach($trails as $trail)
+                        {{--@foreach($trails as $trail)
                         <option value="new_race/{{ $trail->trail_name }}">{{ $trail->trail_name }}</option>
-                        @endforeach -->
+                        @endforeach--}}
                         <option value="Arizona Canal Trail">Arizona Canal Trail</option>
                         <option value="Lake Pleasant Parkway">Lake Pleasant Parkway</option>
                         <option value="New River Trail">New River Trail</option>
@@ -44,9 +44,13 @@
                     <input type="date" name="close_date">
                 </div>
 
-                <button type="submit">
+                {{-- <button type="submit">
                     <i class="fa fa-bicycle"></i>
                     <span>Create Trail</span>
+                </button> --}}
+                <button type="submit" class="submit">
+                    <i class="fa fa-bicycle"></i>
+                    <span>Start Race</span>
                 </button>
 
         </form>
@@ -59,10 +63,6 @@
             <i class="fa fa-users"></i>
             <span>7 Racers</span>
         </div>
-        <button type="submit">
-            <i class="fa fa-bicycle"></i>
-            <span>Start Race</span>
-        </button>
     </div>
 </div>
 

@@ -164,6 +164,20 @@ Primary Content
     font-size: 14pt;
 }
 
+button.submit {
+    background-color: #FF7F66;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    font-size: 14pt;
+    position: absolute;
+    top: 476px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
 i {
     margin-right: 10px;
 }
@@ -185,7 +199,25 @@ i {
 }
 
 th, td {
-    margin-right: 100px;
+    margin-left: 30px;
+}
+
+.middle {
+    margin: auto;
+}
+
+.last {
+    margin-right: 450px;
+}
+
+.edit {
+    position: absolute;
+    right: 230px;
+}
+
+.delete {
+    position: absolute;
+    right: 30px;
 }
 
 .races tr:nth-child(odd) {
