@@ -203,21 +203,27 @@ th, td {
 }
 
 .middle {
-    margin: auto;
+    position: absolute;
+    left: 400px;
+    transform: translateY(160%);
 }
 
 .last {
-    margin-right: 450px;
+    position: absolute;
+    right: 450px;
+    transform: translateY(160%);
 }
 
 .edit {
     position: absolute;
     right: 230px;
+    transform: translateY(160%);
 }
 
 .delete {
     position: absolute;
     right: 30px;
+    transform: translateY(160%);
 }
 
 .races tr:nth-child(odd) {
